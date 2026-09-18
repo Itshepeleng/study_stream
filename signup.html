@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Study Stream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="first-container">
+        <h1>Create an Account</h1>
+        <p class="login">Already have an account? <a href="index.html">Login</a></p>
+        
+        <form action="#" method="post" id="signupForm">
+            <div class="input-row">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            
+            <div class="input-group password-container">
+                <input type="password" class="form-control" placeholder="Create Password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+            
+            <div class="terms-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms & Conditions</label>
+            </div>
+            
+            <button type="submit" class="login-button">
+                <span class="btn-text">Sign Up</span>
+                <span class="loading-spinner" style="display: none;">⏳</span>
+            </button>
+            
+            <div class="divider">Or</div>
+            
+            <button type="button" class="social-login-button">
+                <span class="google-icon">G</span>Sign up with Google
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

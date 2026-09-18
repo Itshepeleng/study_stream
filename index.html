@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="first-container">
+        <div class="header">
+            <h1>Welcome Back To Study Stream!</h1>
+            <p>First time here? <a href="signup.html" class="signup-link">Sign Up for free</a></p>
+        </div>
+
+        <form action="#" method="post" id="loginForm">
+            <div class="sign-up-form">
+                <input type="email" id="userEmail" class="form-control" placeholder="Email" required>
+                <div class="validation-message" id="emailValidation"></div>
+            </div>
+
+            <div class="sign-up-form password-container">
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                <div class="validation-message" id="passwordValidation"></div>
+            </div>
+
+            <div class="divider">Or</div>
+
+            <button type="button" class="social-login-button" id="googleLogin">
+                <span class="google-icon">G</span>Log in with Google
+            </button>
+
+            <button type="submit" class="login-button" id="loginBtn">
+                <span class="btn-text">Log In</span>
+                <span class="loading-spinner" style="display: none;">⏳</span>
+            </button>
+
+            <div class="message" id="loginMessage"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
